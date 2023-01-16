@@ -12,7 +12,11 @@ module.exports = (sequelize, DataTypes) => {
       },
       published: {
         type: DataTypes.BOOLEAN
-      }
+      },
+    token: {
+        type: DataTypes.STRING,
+        default:''
+    }
     });
   
     return Users;
