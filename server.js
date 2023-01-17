@@ -17,8 +17,10 @@ app.use(express.urlencoded({extended: true}));
 
 //routers
 
-const router = require('./routes/userRouter.js')
-app.use('/api/user', router)
+const userrouter = require('./routes/userRouter.js');
+const eventrouter = require('./routes/eventRouter.js');
+app.use('/api/user', userrouter);
+app.use('/api/event', eventrouter);
 
 
 

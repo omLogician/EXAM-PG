@@ -31,7 +31,7 @@ db.Sequelize = Sequelize
 db.sequelize = sequelize
 
 db.users = require('./userModel.js')(sequelize, DataTypes)
-// db.reviews = require('./reviewModel.js')(sequelize, DataTypes)
+db.events = require('./eventModel.js')(sequelize, DataTypes)
 
 
 db.sequelize.sync( {force: false} )
