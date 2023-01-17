@@ -11,7 +11,7 @@ module.exports = {
         idle: 10000
     },
     secretJWT : "thisismysecretKey",
-    emailUser:'',
-    emailPasswd:''
+    // user:'captainpandey101002@gmail.com',
+    // pass:'mhdvkuvqwtgzijfe'
 
 }
